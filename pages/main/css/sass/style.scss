@@ -1,1 +1,15 @@
-//You can change the name in this file
+// Abstract
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+
+// Base
+@import "base/normalize";
+@import "base/base";
+
+// Components
+
+// Layouts
+@import "layout/wrapper";
+@import "layout/header";
+@import "layout/promo";

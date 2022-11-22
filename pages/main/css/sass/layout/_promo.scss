@@ -1,0 +1,39 @@
+.promo {
+    background: url(/online-zoo/assets/images/promo/Giant_panda.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 86px 0px 100px;
+}
+
+.title-container {
+    max-width: 500px;
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
+}
+
+.title-background {
+    width: 465px;
+    height: 465px;
+    position: absolute;
+    border-radius: 100%;
+    background: $color-primary;
+    top: -74px;
+    left: -73px;
+}
+
+.promo__title {
+    text-align: center;
+    color: $color-light;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    & span {
+        color: $color-text-selection;
+    }
+}
+

@@ -1,1 +1,5 @@
-//This file you will create your mixins inside of the project
+@mixin font($size, $line-height, $weight: 400) {
+    font-size: $size;
+    line-height: $line-height;
+    font-weight: $weight;
+}

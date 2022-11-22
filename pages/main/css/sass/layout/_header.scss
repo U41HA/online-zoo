@@ -1,1 +1,54 @@
-//This file is for create your style with relation on space of header
+.header {
+    background: $color-dark;
+    color: $color-light;
+    padding: 14px 0;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-navigation-container {
+    display: flex;
+    align-items: center;
+    gap: 63px;
+}
+
+.logo__container {
+    width: 70px;
+    text-align: center;
+    border: 1px solid $color-light;
+    position: relative;
+    padding: 3.5px 4.75px;
+    border-radius: 2px;
+}
+
+.logo__icon {
+    position: absolute;
+    top: 23px;
+    left: 9px;
+}
+
+.logo__title {
+    @include font(1.9rem, 120%);
+    color: $color-light;
+    margin: 0;
+    user-select: none;
+}
+
+.navigation__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 58px;
+}
+
+.navigation__link, .design-link{
+   @extend %hovered;
+}
+
+.design-link {
+    @include font(1.6rem, 140%, 500);
+}
