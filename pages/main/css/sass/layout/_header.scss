@@ -45,10 +45,6 @@
     gap: 58px;
 }
 
-.navigation__link, .design-link{
-   @extend %hovered;
-}
-
 .design-link {
     @include font(1.6rem, 140%, 500);
 }

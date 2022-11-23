@@ -1,1 +1,38 @@
-//This file you will create your style for buttons inside of the project
+.buttons {
+    @include font(1.6rem, 140%, 500);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-colored {
+    color: $color-light;
+    @extend %button-gradient;
+    border: none;
+    padding: 16px 0;
+    min-width: 298px;
+    text-transform: uppercase;
+    &:hover {
+        background: $color-hovered;
+    }
+    &:active {
+        background: green;
+    }
+}
+
+.button-bordered {
+    border-radius: 25px;
+}
+
+.button-submit {
+    padding: 10px 39px;
+    color: $color-dark-prim;
+    border: 1px solid $color-dark-prim;
+    &:active {
+        border-color: $color-active;
+        color: $color-active;
+    }
+    &:invalid {
+        border-color: $color-mistake;
+        color: $color-mistake;
+    }
+}

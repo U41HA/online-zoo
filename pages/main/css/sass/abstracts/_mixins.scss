@@ -3,3 +3,25 @@
     line-height: $line-height;
     font-weight: $weight;
 }
+
+@mixin column-2($width-first, $width-second) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    >:first-child {
+        flex-basis: $width-first;
+    }
+    >:last-child {
+        flex-basis: $width-second;
+    }
+    
+}
+
+@mixin column($width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    >* {
+        flex-basis: $width;
+    }
+}

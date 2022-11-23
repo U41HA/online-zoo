@@ -1,0 +1,28 @@
+.backstage {
+    position: relative;
+    padding: 140px 0 180px;
+}
+
+.backstage__content {
+    >* {
+        margin: 0;
+    }
+}
+
+.backstage__title {
+    margin-bottom: 20px;
+}
+
+.backstage__text:first-of-type {
+    margin-bottom: 54px;
+}
+
+.backstage__subtitle {
+    margin-bottom: 34px;
+}
+
+.backstage__img-add {
+    position: absolute;
+    top: 12px;
+    right: 0px;
+}

@@ -1,0 +1,23 @@
+.layout-2-columns {
+    @include column-2(52.5%, 40%);
+}
+
+.layout-3-column {
+    @include column(31%);
+}
+
+.layout-3-column-feed {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 130px;
+    >* {
+        flex-basis: 170px;
+    }
+
+}
+
+.layout-4-column {
+    @include column(268px);
+}

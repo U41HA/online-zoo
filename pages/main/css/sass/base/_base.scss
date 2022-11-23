@@ -2,11 +2,7 @@ html {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: $color-light;
+    color: $color-dark-prim;
 }
 
 h1 {
@@ -25,6 +21,15 @@ h4 {
     @include font(2.4rem, 120%);
 }
 
+.text-button {
+    @include font(1.6rem, 140%, 500);
+    text-transform: uppercase;
+}
+
+.text-button-low {
+    @include font(1.6rem, 140%, 500);
+}
+
 .text-body {
     @include font(1.6rem, 140%);
 }
@@ -33,11 +38,10 @@ h4 {
     @include font(1.5rem, 120%, 300);
 }
 
-.text-button {
-    @include font(1.6rem, 140%, 500);
-    text-transform: uppercase;
-}
-
 .text-thin {
     @include font(1.6rem, 130%, 100);
+}
+
+p {
+    margin: 0;
 }

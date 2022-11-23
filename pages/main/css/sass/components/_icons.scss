@@ -1,0 +1,56 @@
+
+.food-icon {
+    display: inline-block;
+    &.grass {
+        width: 33px;
+        height: 37px;
+        background: url(/online-zoo/assets/icons/animals/banana-bamboo_icon.svg) center center no-repeat;
+    }
+
+    &.meat {
+        width: 48px;
+        height: 38px;
+        background: url(/online-zoo/assets/icons/animals/meet-fish_icon.svg) center center no-repeat;
+    }
+}
+
+.how-it-works__image {
+
+    &.card-icon {
+        background: url(/online-zoo/assets/icons/feed/pay.svg) center center no-repeat, $color-light;
+    }
+
+    &.zoo-icon {
+        background: url(/online-zoo/assets/icons/feed/zoo.svg) center center no-repeat, $color-light;
+    }
+
+    &.monkey-icon {
+        background: url(/online-zoo/assets/icons/feed/monkey.svg) center center no-repeat, $color-light;
+    }
+ 
+}
+
+.user__icon {
+    width: 37px;
+    height: 37px;
+    overflow: hidden;
+    border-radius: 100px;
+
+    &.first {
+        background: url(/online-zoo/assets/icons/testimonials/Vector.svg) center center no-repeat;
+    }
+
+    &.second {
+        background: url(/online-zoo/assets/icons/testimonials/Ellipse_1.png);
+    }
+
+    &.third {
+        background: url(/online-zoo/assets/icons/testimonials/Ellipse_2.png);
+    }
+
+
+    &.fourth {
+        background: url(/online-zoo/assets/icons/testimonials/Ellipse_3.png);
+    }
+
+}

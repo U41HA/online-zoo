@@ -1,0 +1,85 @@
+.pick-and-feed {
+    @extend %background-gradient;
+    padding-top: 69px;
+    padding-bottom: 100px;
+}
+
+.feed {
+    background: $color-glass-transparent;
+    border-radius: 20px;
+    padding-top: 41px;
+    padding-bottom: 59px;
+}
+
+.feed__content {
+    padding-left: 99px;
+    padding-right: 59px;
+}
+
+.feed__title {
+    color: $color-primary;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.feed__subtitle,
+.feed-text {
+    color: $color-dark-prim;
+}
+
+.feed__subtitle {
+    margin: 0px 0px 40px 0px;
+}
+
+.feed__text {
+    margin-bottom: 10px;
+
+    &:last-of-type {
+        max-width: 863px;
+    }
+}
+
+.feed__link {
+    color: $color-dark-prim;
+    border-bottom: 1px solid $color-primary;
+}
+
+
+.how-it-works {
+    padding: 60px 0px;
+}
+
+.how-it-works__subtitle {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.how-it-works__card {
+    position: relative;
+    &:not(:last-child):after {
+        content: '';
+        position: absolute;
+        left: 198px;
+        top: 62px;
+        width: 69px;
+        height: 35px;
+        background: url(/online-zoo/assets/icons/feed/Vector.svg) center center no-repeat;
+    }
+}
+
+.how-it-works__image {
+    width: 168px;
+    height: 168px;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.how-it-works__description {
+    margin-bottom: 60px;
+}
+
+.how-it-works__button {
+    text-align: center;
+}
