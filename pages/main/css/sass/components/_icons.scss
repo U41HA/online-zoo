@@ -1,6 +1,6 @@
-
 .food-icon {
     display: inline-block;
+
     &.grass {
         width: 33px;
         height: 37px;
@@ -27,7 +27,7 @@
     &.monkey-icon {
         background: url(/online-zoo/assets/icons/feed/monkey.svg) center center no-repeat, $color-light;
     }
- 
+
 }
 
 .user__icon {
@@ -52,5 +52,32 @@
     &.fourth {
         background: url(/online-zoo/assets/icons/testimonials/Ellipse_3.png);
     }
+}
 
+.social__link {
+    &::before {
+        content: "";
+        width: 26px;
+        height: 26px;
+        border-radius: 100px;
+        position: absolute;
+        left: -35px;
+        top: -3px;
+    }
+
+    &.facebook::before {
+        background: url(/online-zoo/assets/icons/footer/facebook.svg) center center no-repeat $color-icon-social;
+    }
+
+    &.twitter::before {
+        background: url(/online-zoo/assets/icons/footer/twitter.svg) center center no-repeat $color-icon-social;
+    }
+
+    &.instagram::before {
+        background: url(/online-zoo/assets/icons/footer/instagram.svg) center center no-repeat $color-icon-social;
+    }
+
+    &.youtube::before {
+        background: url(/online-zoo/assets/icons/footer/youtube.svg) center center no-repeat $color-icon-social;
+    }
 }

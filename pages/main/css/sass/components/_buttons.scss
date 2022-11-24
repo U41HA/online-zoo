@@ -6,13 +6,15 @@
 
 .button-colored {
     color: $color-light;
-    @extend %button-gradient;
+    background: $color-primary;
     border: none;
     padding: 16px 0;
     min-width: 298px;
     text-transform: uppercase;
+    transition: background-color 0.3s;
     &:hover {
         background: $color-hovered;
+
     }
     &:active {
         background: green;
@@ -30,9 +32,5 @@
     &:active {
         border-color: $color-active;
         color: $color-active;
-    }
-    &:invalid {
-        border-color: $color-mistake;
-        color: $color-mistake;
     }
 }

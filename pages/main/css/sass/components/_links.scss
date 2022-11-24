@@ -3,3 +3,10 @@ a {
     color: $color-light;
     @extend %hovered-link;
 }
+
+.active-link {
+    &:hover {
+        color: $color-active;
+        transition: color 0.3s;
+    }
+}

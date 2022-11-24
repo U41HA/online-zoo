@@ -21,3 +21,7 @@
 .layout-4-column {
     @include column(268px);
 }
+
+.layout-3-column-footer {
+    @include column(31.5%)
+}

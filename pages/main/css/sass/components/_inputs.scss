@@ -1,1 +1,26 @@
-//This file you will create your style for inputs inside of the project
+.subscribe-form__input {
+    padding: 10px;
+    color: $color-text-hide;
+    border: 0.7px solid $color-primary;
+    background: transparent;
+    border-radius: 2px;
+    min-width: 208px;
+    outline: 0;
+
+    &:focus {
+        border: 0.7px solid $color-active;
+        & +.button-submit {
+            color: $color-active;
+            border-color: $color-active;
+        }
+    }
+
+    &:invalid {
+        color: $color-mistake;
+        border: 0.7px solid $color-mistake;
+        & +.button-submit {
+            border-color: $color-mistake;
+            color: $color-mistake;
+        }
+    }
+}
